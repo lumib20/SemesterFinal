@@ -1,0 +1,103 @@
+
+#header {
+    background-color:black;
+     color:white;
+     text-align:center;
+    padding:5px;
+}
+body {
+    background-color: #fff;
+} 
+
+
+img {
+     opacity: 1.0;
+     filter: alpha(opacity=100); /* For IE8 and earlier */
+ }
+
+img:hover {
+     opacity: 0.4;
+     filter: alpha(opacity=40); /* For IE8 and earlier */
+ } 
+
+/* Drop downish menu
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ } 
+ li a {
+     display: block;
+     width: 60px;
+ }
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+    width: 60px;
+ } 
+
+li a {
+     display: block;
+ }ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+/* li a:hover {
+    background-color: #555;
+    color: white;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+li {
+    text-align: center;
+} */ 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <ul style="float:right;list-style-type:none;">
+    <li><a class="active" href="#about">About</a></li>
+    <li><a href="#login">Login</a></li>
+  </ul>
+</ul>
+
