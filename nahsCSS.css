@@ -91,6 +91,27 @@ li a {
 li a:hover {
     background-color: #111;
 }
+   
+ul {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+li {
+     float: left;
+ }
+li a {
+     display: block;
+     width: 60px;
+ }
+li {
+    text-align: center;
+}
+ul {
+     background-color: #080000  ;
+ }
+
+}
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
@@ -100,4 +121,9 @@ li a:hover {
     <li><a href="#login">Login</a></li>
   </ul>
 </ul>
+
+
+
+
+
 
