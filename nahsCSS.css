@@ -13,12 +13,48 @@ body {
 img {
      opacity: 1.0;
      filter: alpha(opacity=100); /* For IE8 and earlier */
- }
+ } 
 
 img:hover {
      opacity: 0.4;
      filter: alpha(opacity=40); /* For IE8 and earlier */
  } 
+
+
+ h1 {
+    letter-spacing: 4px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+
+}
+
+
+div.background {
+  background: url(CAUHAUS.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+
+
 
 /* Drop downish menu
  ul {

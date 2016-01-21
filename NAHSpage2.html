@@ -1,0 +1,263 @@
+<!DOCTYPE>
+<html> 
+
+	<head> 
+		<title> Art Activities NAHS St Marys </title>
+		<link rel="stylesheet" type="text/css" href="nahsCSS.css">
+		<script type="JAVAS.js"></script>
+	</head>
+
+	<center>
+		<body>
+				<div id="header">
+					<h1>NAHS</h1>
+				</div>
+
+			<h2>PDX ART ACTIVITIES</h2>
+	</center> 
+
+
+			<ul>
+   <li><a href="default.asp">Home</a></li>
+   <li><a href="news.asp">News</a></li>
+   <li><a href="contact.asp">Contact</a></li>
+   <li><a href="about.asp">About</a></li>
+			</ul>
+
+
+<center>
+			<a href="http://portlandartmuseum.org/exhibitions/current/">
+				<img width="260" height="260" class="left" src="http://media-cache-ak0.pinimg.com/736x/7b/37/ea/7b37ea0cd67070c4a6756b65349c87e9.jpg" sizes="(max-width: 260px) 100vw, 260px"> 
+			</a>
+
+			<a href="http://www.travelportland.com/collection/visual-arts/">
+				<img width="260" height="260" src="VISARTS.jpg" sizes="(max-width: 260px) 100vw, 260px"> 
+			</a>	
+			<a href="http://www.travelportland.com/article/monthly-art-walks-in-portland/">
+				<img width="260" height="260" src="ARTWALKS.jpg" sizes="(max-width: 260px) 100vw, 260px"> 
+			</a>
+				
+			<img width="260" height="520" src="ARTWALKS.jpg" sizes="(max-width: 260px) 100vw, 260px"style="float:right;">  
+
+			<br>
+			<a href="http://www.travelportland.com/article/portland-film-festivals/">
+				<img width="260" height="260" src="FILMFEST.jpg" sizes="(max-width: 260px) 100vw, 260px">
+			 </a>
+			 <a href="http://www.travelportland.com/collection/performing-arts/">
+				<img width="260" height="260" src="PERFORMART.jpg" sizes="(max-width: 260px) 100vw, 260px">
+			 </a>
+			 <a href="http://www.travelportland.com/article/portland-film-festivals/"></a>
+				<img width="260" height="260" src="FILMFEST.jpg" sizes="(max-width: 260px) 100vw, 260px"> 
+			
+
+	<br>
+	<br>
+	<br>
+
+			<a href="https://coffeeshopadventures.wordpress.com/" target="_blank">
+						<img width="220" height="180" class="left" src="COFFEE.jpg" sizes="(max-width: 260px) 100vw, 260px"> 
+					</a>
+			<a href="http://sonja-bales.squarespace.com/" target="_blank">
+						<img width="220" height="180" class="left" src="BEAK.jpg" sizes="(max-width: 200px) 100vw, 260px"> 
+					</a> 
+			<a href="http://cauhausstudios.blogspot.com/" target="_blank">
+						<img width="220" height="180" class="left" src="CAUHAUS.jpg" sizes="(max-width: 200px) 100vw, 260px"> 
+					</a> 
+
+
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "firstcar.gif" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "secondcar.gif"
+slideimages[2] = new Image()
+slideimages[2].src = "thirdcar.gif"
+
+</script>
+</head>
+<body>
+<a href="javascript:slidelink()"><img src="firstcar.gif" id="slide" width=300 height=360 /></a>
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step = 0
+var whichimage = 0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ whichimage = step
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+function slidelink(){
+ if (whichimage == 0)
+  window.location = "link1.htm"
+ else if (whichimage == 1)
+  window.location = "link2.htm"
+ else if (whichimage == 2)
+  window.location = "link3.htm"
+}
+
+slideit()
+
+</script>
+
+
+</center> 
+	<!-- UP TO THIS POINT HERE___ THINGS ARE WORKING JUST FINE!! I THINK THAT IM NOT GOING TO USE THIS BECAUSE IT IS MESSING EVERYTHING UP -->
+
+
+
+
+ 
+		<center>
+	<!-- This is the gallery that is not quite working the way i would like it to for now: but i am keeping it here to work on for later:
+
+											<style>
+											div.img {
+											    margin: 5px;
+											    border: 1px solid #ccc;
+											    float: left;
+											    width: 180px;
+											}	
+
+											div.img:hover {
+											    border: 1px solid #777;
+											}
+
+											div.img img {
+											    width: 100%;
+											    height: auto;
+											}
+
+											div.desc {
+											    padding: 15px;
+											    text-align: center;
+											}
+											</style>
+											</head>
+
+
+											<div class="img">
+											  <a target="_blank" href="COFFEESHOP.jpg">
+											    <img src="COFFEESHOP.jpg" alt="Trolltunga Norway" width="300" height="200">
+											  </a>
+											  <div class="desc">Lumis aFake WEbsite that is not actually real but looks cool anyway so whatever who cares (not me) whatever Miller</div>
+											</div>
+
+											<div class="img">
+											  <a target="_blank" href="img_forest.jpg">
+											    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+											  </a>
+											  <div class="desc">Add a description of the image here</div>
+											</div>
+
+											<div class="img">
+											  <a target="_blank" href="img_lights.jpg">
+											    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+											  </a>
+											  <div class="desc">Add a description of the image here</div>
+											</div>
+
+											<div class="img">
+											  <a target="_blank" href="img_mountains.jpg">
+											    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+											  </a>
+											  <div class="desc">Add a description of the image here</div>
+											</div>
+
+											<div class="img">
+											  <a target="_blank" href="img_mountains.jpg">
+											    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+											  </a>
+											  <div class="desc">Add a description of the image here</div>
+											</div>
+
+											<div class="img">
+											  <a target="_blank" href="img_mountains.jpg">
+											    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+											  </a>
+											  <div class="desc">Add a description of the image here</div>
+											</div>
+
+											<div class="img">
+											  <a target="_blank" href="img_mountains.jpg">
+											    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+											  </a>
+											  <div class="desc">Add a description of the image here</div>
+											</div>
+
+
+					-->
+<br>
+<br>
+<br>
+
+
+ 
+		</center>
+		<br>
+
+	
+
+
+				
+<!--
+
+<style>
+						div.background {
+						     background: url("FILMFEST.jpg") repeat;
+						     border: 0px solid black;
+						 }
+
+						div.transbox {
+						     margin: 10px;
+						     background-color: #ffffff;
+						     border: .02px solid black;
+						     opacity: 0.6;
+						     filter: alpha(opacity=60); /* For IE8 and earlier */
+						 }
+
+						div.transbox p {
+						     margin: 5%;
+						     font-weight: bold;
+						     color: #000000;
+						 }
+						</style>
+						</head>
+						<body>
+						<center>
+						<div class="background">
+						   <div class="transbox">
+						     <p>PDX ART ACTIVITIES</p>
+						   </div>
+						</div>
+						</center>
+					-->
+<!--				
+<img width="1140" height="450" class="attachment-large-pano size-large-pano wp-post-image" alt="Force of Nature: Emmet Gowin in the American West" src="http://portlandartmuseum.org/wp-content/uploads/2015/09/Force-of-Nature-slide2.jpg" sizes="(max-width: 1140px) 100vw, 1140px" srcset="http://portlandartmuseum.org/wp-content/uploads/2015/09/Force-of-Nature-slide2-400x158.jpg 400w, http://portlandartmuseum.org/wp-content/uploads/2015/09/Force-of-Nature-slide2-1024x404.jpg 1024w, http://portlandartmuseum.org/wp-content/uploads/2015/09/Force-of-Nature-slide2-600x237.jpg 600w, http://portlandartmuseum.org/wp-content/uploads/2015/09/Force-of-Nature-slide2.jpg 1140w"> -->
+
+
+		</body>
+	
+
+<!--ART ACTIVITIES - VISUAL ARTS: http://www.travelportland.com/collection/visual-arts/ 
+	ART WALKS (could be an individual link to this page through photo: http://www.travelportland.com/article/monthly-art-walks-in-portland/
+	FILM FESTIVALS: http://www.travelportland.com/article/portland-film-festivals/
+	ARTS ACTIVITIES PERFORMING ARTS?? :http://www.travelportland.com/collection/performing-arts/ (ADD POTENTIALLY?)
+
+	ALSO INCLUDE: LINKS TO ART STORES: COLLAGE, BLICK. BEST SKETCHING SPOTS ACC. TO LUMI: LINKS TO CAFE PAGES
+	-->
+
+
